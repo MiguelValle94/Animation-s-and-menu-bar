@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    margin: 0 20px 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: blue;
+    padding: 20px 10px 20px -10px;
+    margin: -20px 0 -20px;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    line-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#rest-of-the-page {
+    padding-left: 220px
+}
+
+ul {
+    list-style: '';
+    margin-left: -20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info img {
+    width: 80px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.contact-info img:hover {
+    width: 200px;
+}
+
+.after-landing {
+    position: absolute;
+}
+
+.animation {
+    animation-name: landing;
+    animation-duration: 3s;
+    animation-timing-function: linear
+}
+
+#ryanair {
+    width: 200px;
+    position: sticky;
+}
+
+
+
+@keyframes landing {
+    0% {
+        margin-left: 100%;
+        transform: rotate(45deg);
+        transform-origin: 800px;
+    }
+
+    50% {
+        margin-left: 400px;
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}

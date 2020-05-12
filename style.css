@@ -6,11 +6,12 @@ body {
 }
 
 nav {
-
-    height: 100%;
-    width: 200px;
-    box-sizing: border-box;
+    
     position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
     background-color: blue;
     padding: 20px 10px 20px -10px;
     margin: -20px 0 -20px;
@@ -59,7 +60,6 @@ ul {
 
 #ryanair {
     width: 200px;
-    position: sticky;
 }
 
 
@@ -67,13 +67,16 @@ ul {
 @keyframes landing {
     0% {
         margin-left: 100%;
-        transform: rotate(45deg);
-        transform-origin: 800px;
+        transform: rotate(30deg);
+        position: relative;
+        top: -400px;
     }
 
     50% {
         margin-left: 400px;
         transform: rotate(0deg);
+        position: relative;
+        top: 0;
         margin-top: 0px;
     }
 
